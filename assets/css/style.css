@@ -2,9 +2,7 @@ ul {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
@@ -22,7 +20,7 @@ li::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.75);
 }
 
 li:hover::before {
@@ -30,17 +28,26 @@ li:hover::before {
   background-color: rgba(0,0,0,0);
 }
 
+li:hover a {
+  transition: all .5s;
+  opacity: 0;
+}
+
 li:nth-child(1) {
-  background: url(./images/bg_lg_n-sys.png) no-repeat center / cover;
+  background: url(../images/bg_lg_n-sys.png) no-repeat center / cover;
 }
 li:nth-child(2) {
-  background: url(./images/bg_hyundai_card.png) no-repeat center / cover;
+  background: url(../images/bg_hyundai_card.png) no-repeat center / cover;
 }
 li:nth-child(3) {
-  background: url(./images/bg_movie_search.png) no-repeat center / cover;
+  background: url(../images/bg_movie_search.png) no-repeat center / cover;
 }
 li:nth-child(4) {
-  background: url(./images/bg_calculator.png) no-repeat center / cover;
+  background: url(../images/bg_calculator.png) no-repeat center / cover;
+}
+
+li:nth-child(5) {
+  background: url(../images/bg_starbucks.png) no-repeat center / cover;
 }
 
 a {
